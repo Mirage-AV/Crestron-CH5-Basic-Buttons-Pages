@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <title>Crestron CH5 Basic</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="./node_modules/@crestron/ch5-theme/output/themes/light-theme.css" />
+    </head>
+    <body>
+        <div class="top-bar">
+            <img id="logo-img" src="./assets/images/globe.png">
+            <h1 id="header-text">CH5 Basic Example</h1>
+            <h1></h1>
+        </div>
+        <div class="middle-bar">
+            <div class="source-pages">
+                <ch5-triggerview receivestateshow="11">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Home Page</h1>
+                        <img src="assets/images/Line Horizontal.png">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="12">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Laptop Selected</h1>
+                        <img src="assets/images/Line Horizontal.png">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="13">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Video Conference Selected</h1>
+                        <img src="assets/images/Line Horizontal.png">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="14">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Phone Selected</h1>
+                        <img src="assets/images/Line Horizontal.png">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+                <ch5-triggerview receivestateshow="15">
+                    <div class="subpage-header">
+                        <h1 class="subpage-header-text">Apple TV Selected</h1>
+                        <img src="assets/images/Line Horizontal.png">
+                    </div>
+                    <div class=subpage-main>
+                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                    </div>
+                </ch5-triggerview>
+            </div>
+            <div class="right-bar">
+                <div>
+                    <h2 class="rightbar-label-text">Microphone</h2>
+                    <ch5-toggle id="mic-btn" labelon="On" labeloff="Off" sendeventonclick="100" receivestatevalue="100"></ch5-toggle>
+                </div>
+                <div>
+                    <h2 class="rightbar-label-text">Volume</h2>
+                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" shape="circle" iconurl="assets/images/Volume Hi.png" sendeventontouch="4"></ch5-button>
+                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" shape="circle" iconurl="assets/images/Volume Lo.png" sendeventontouch="5"></ch5-button>
+                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" shape="circle" iconurl="assets/images/Volume Mute.png" sendeventonclick="6" receivestateselected="6"></ch5-button>
+                </div>
+            </div>    
+        </div>
+        <div class="bottom-bar">
+            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Home" iconurl="assets/images/Home.png" iconposition="top" sendeventonclick="11" receivestateselected="11"></ch5-button>
+            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Laptop" iconurl="assets/images/Laptop.png" iconposition="top" sendeventonclick="12" receivestateselected="12"></ch5-button>
+            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Video Conference" iconurl="assets/images/Users.png" iconposition="top" sendeventonclick="13" receivestateselected="13"></ch5-button>
+            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Phone" iconurl="assets/images/Phone.png" iconposition="top" sendeventonclick="14" receivestateselected="14"></ch5-button>
+            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Apple TV" iconurl="assets/images/Apple.png" iconposition="top" sendeventonclick="15" receivestateselected="15"></ch5-button>
+        </div>
+        <script src="./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"></script>
+        <!-- Comment 2 lines below before archiving or they will run the emulator on the touchpanel -->
+        <script src="./assets/vendor/service.js"></script>
+        <script src="./assets/vendor/app.js"></script>
+        <!--*************************************************************************************-->
+    </body>
+</html>

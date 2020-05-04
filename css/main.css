@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    
+}
+
+body{
+    background-image: url("../assets/images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+
+/****************** top bar ******************************************/
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: #00000077;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+#logo-img{
+    display: flex;
+    height: 10vh;
+    width: auto;
+    margin: 2.5vh;
+}
+
+#header-text{
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+/*********************************************************************/
+/********* Middle ****************************************************/
+.middle-bar{
+    display:flex;
+    justify-content: space-between;
+}
+
+/********* Source pages ***********************************************/
+.source-pages{
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+.subpage-header{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+}
+.subpage-header-text{
+    color: linen !important;
+    text-align: center;
+    margin: 1vh;
+}
+
+#home-page-text{
+    display:flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vh 3vw;
+    color: ivory;
+    font-size: 1.5em;
+}
+/*********************************************************************/
+
+/********* Right Bar ****************************************************/
+.right-bar{
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 18vw;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+.rightbar-label-text{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+#mic-btn{
+    display:flex;
+    justify-content: center;
+}
+
+.volume-btn{
+    display:flex;
+    margin: 1vw;
+    justify-content: left;
+    width: 5em;
+    height: 5em;
+}
+
+.ch5-button--secondary.volume-btn-custom{
+    background-color: #00000030;
+}
+
+.ch5-button--secondary.volume-btn-custom .cb-btn .ch5-button--img{
+    width: 3vw;
+    height: auto;
+}
+.ch5-button--secondary.volume-btn-custom .cb-btn{
+    padding: 0;
+    width: 5em;
+    height: 5em;
+}
+
+
+/*********************************************************************/
+/********* Bottom ****************************************************/
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 21vh;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+.source-btn{
+    height:17vh;
+    width: 17vw;
+    display: flex;
+    margin: 2vh;
+}
+
+.ch5-button--default.source-btn-custom .cb-btn{
+    padding: 0;
+    width: 17vw;
+    height: 17vh;
+}
+
+.ch5-button--default.source-btn-custom .cb-btn .ch5-button--img{
+    width: 5vw;
+    height: auto;
+}
+
+.ch5-button--default.source-btn-custom .cb-btn .ch5-button--label{
+    font-size: 2vw;
+}
+
+/*********************************************************************/
+/********* Change look of the light-theme default button *************/
+.ch5-button--default{
+    border-color: white !important;
+}
+
+.ch5-button--default.ch5-button--selected{
+    background-color: purple !important;
+    border-color: antiquewhite !important;
+}
+
+/*********************************************************************/
+/********* Change look of the light-theme toggle button *************/
+.ch5-toggle .ch5-toggle__off-label{
+    color: black !important;
+}
+
+.ch5-toggle .ch5-toggle__on-label{
+    color: black !important;
+}
+
+/*********************************************************************/
+/********* Change look of the light-theme secondary button (used for mute on state) *************/
+.ch5-button--secondary.ch5-button--selected{
+    background-color: darkred !important;
+}
