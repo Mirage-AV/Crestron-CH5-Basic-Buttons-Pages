@@ -1,9 +1,5 @@
-* {
-    padding: 0;
-    
-}
-
 body{
+    padding: 0;
     background-image: url("../assets/images/background-image.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;

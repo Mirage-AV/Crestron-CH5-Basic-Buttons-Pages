@@ -1,8 +1,4 @@
 # Acknowledgments
-For the basics in HTML/CSS -  https://www.internetingishard.com/ 
-For some nice instructional videos - https://www.youtube.com/user/TechGuyWeb/featured
-For help with the emulator, maglite4cell on the CrestronProfessionals Discord server
-
 Graphics used come from the Crestron application market, Slate theme - https://applicationmarket.crestron.com/slate-theme-documentation/
 
 # Installation
