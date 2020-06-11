@@ -36,11 +36,6 @@ Open a termial window in VS Code
 If this is the first time using VS Code and if it says Windows Powershell at the top of the terminal window run the command;
  Set-ExecutionPolicy RemoteSigned
 
-# These commands install the required files to run a Crestron CH5 project
-Now run the commands;
- npm install @crestron/ch5-crcomlib
- npm install @crestron/ch5-theme
-
 # Build project archive for loading to the touch panel
 If you've built the project before you may need to delete the 'dist' directory from your folder, it wouldn't run for me if it already existed.
 Comment out the emulator scripts or they will work on the touchpanel.
