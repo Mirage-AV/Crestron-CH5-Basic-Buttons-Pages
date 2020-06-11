@@ -21,7 +21,8 @@
                         <img src="assets/images/Line Horizontal.png">
                     </div>
                     <div class=subpage-main>
-                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                        <p class="home-page-text">A simple example of how Crestron CH5 works.<br>With a working emulator so it can be tested in a browser.</p>
+                        
                     </div>
                 </ch5-triggerview>
                 <ch5-triggerview receivestateshow="12">
@@ -30,7 +31,7 @@
                         <img src="assets/images/Line Horizontal.png">
                     </div>
                     <div class=subpage-main>
-                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                        <p class="home-page-text">How about adding some laptop selection buttons here, you could even use css flexbox to lay them out nicely.</p>
                     </div>
                 </ch5-triggerview>
                 <ch5-triggerview receivestateshow="13">
@@ -39,7 +40,7 @@
                         <img src="assets/images/Line Horizontal.png">
                     </div>
                     <div class=subpage-main>
-                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                        <p class="home-page-text">Maybe a camera control here (DPad) this time you'll probably want to use css grid to get the DPad buttons to line up</p> 
                     </div>
                 </ch5-triggerview>
                 <ch5-triggerview receivestateshow="14">
@@ -48,7 +49,7 @@
                         <img src="assets/images/Line Horizontal.png">
                     </div>
                     <div class=subpage-main>
-                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                        <p class="home-page-text">Perfect place to try a keypad, css grid again.</p>
                     </div>
                 </ch5-triggerview>
                 <ch5-triggerview receivestateshow="15">
@@ -57,7 +58,7 @@
                         <img src="assets/images/Line Horizontal.png">
                     </div>
                     <div class=subpage-main>
-                        <p id="home-page-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quas quidem impedit dolorum iure dolores sequi nulla praesentium in repellendus error eos minus architecto deserunt vel illo, ex corporis placeat?</p>
+                        <p class="home-page-text">How about using the Dpad from the camera page and changing the center button? Also add the Menu/Play buttons you'd need here.<br>Also a nice place to try some transport controls.</p>
                     </div>
                 </ch5-triggerview>
             </div>
@@ -68,18 +69,18 @@
                 </div>
                 <div class="volume-btns">
                     <h2 class="rightbar-label-text">Volume</h2>
-                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Hi.png" sendeventontouch="4"></ch5-button>
-                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Lo.png" sendeventontouch="5"></ch5-button>
-                    <ch5-button class="volume-btn" customclass="volume-btn-custom" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Mute.png" sendeventonclick="6" receivestateselected="6"></ch5-button>
+                    <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Hi.png" sendeventontouch="4"></ch5-button>
+                    <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Lo.png" sendeventontouch="5"></ch5-button>
+                    <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Mute.png" sendeventonclick="6" receivestateselected="6"></ch5-button>
                 </div>
             </div>    
         </div>
         <div class="bottom-bar">
-            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Home" iconurl="assets/images/Home.png" iconposition="top" sendeventonclick="11" receivestateselected="11"></ch5-button>
-            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Laptop" iconurl="assets/images/Laptop.png" iconposition="top" sendeventonclick="12" receivestateselected="12"></ch5-button>
-            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Video Conference" iconurl="assets/images/Users.png" iconposition="top" sendeventonclick="13" receivestateselected="13"></ch5-button>
-            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Phone" iconurl="assets/images/Phone.png" iconposition="top" sendeventonclick="14" receivestateselected="14"></ch5-button>
-            <ch5-button class="source-btn" customclass="source-btn-custom" type="default" label="Apple TV" iconurl="assets/images/Apple.png" iconposition="top" sendeventonclick="15" receivestateselected="15"></ch5-button>
+            <ch5-button class="source-btn" type="default" stretch="both" label="Home" iconurl="assets/images/Home.png" sendeventonclick="11" receivestateselected="11"></ch5-button>
+            <ch5-button class="source-btn" type="default" stretch="both" label="Laptop" iconurl="assets/images/Laptop.png" sendeventonclick="12" receivestateselected="12"></ch5-button>
+            <ch5-button class="source-btn" type="default" stretch="both" label="Video Conference" iconurl="assets/images/Users.png" sendeventonclick="13" receivestateselected="13"></ch5-button>
+            <ch5-button class="source-btn" type="default" stretch="both" label="Phone" iconurl="assets/images/Phone.png" sendeventonclick="14" receivestateselected="14"></ch5-button>
+            <ch5-button class="source-btn" type="default" stretch="both" label="Apple TV" iconurl="assets/images/Apple.png" sendeventonclick="15" receivestateselected="15"></ch5-button>
         </div>
         <script src="assets\vendor\cr-com-lib.js"></script>
         <!-- Comment 2 lines below before archiving or they will run the emulator on the touchpanel -->
